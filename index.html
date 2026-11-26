@@ -100,11 +100,11 @@ header.nav .wrap{display:flex;align-items:center;justify-content:space-between;g
 .stamp span{font-size:.85rem;color:var(--ink-2);line-height:1.3;display:block}
 
 /* value ribbon */
-.ribbon{background:var(--glacier);color:#fff;transform:skewY(-2deg);margin-top:-1.6rem;position:relative;z-index:2;overflow:hidden}
-.ribbon-track{display:flex;width:max-content;animation:slide 38s linear infinite;transform:skewY(2deg);padding:1.15rem 0}
+.ribbon{background:var(--glacier);color:#fff;position:relative;z-index:3;overflow:hidden;clip-path:polygon(0 22px,100% 0,100% calc(100% - 22px),0 100%);margin-top:-22px;padding:2.1rem 0}
+.ribbon-track{display:flex;width:max-content;animation:slide 38s linear infinite}
 .ribbon span{font-family:var(--wide);font-stretch:125%;font-weight:700;font-size:clamp(1.1rem,2vw,1.5rem);padding:0 1.6rem;display:flex;align-items:center;gap:3.2rem;white-space:nowrap}
 .ribbon span::after{content:"";width:22px;height:8px;background:var(--melt);transform:skewX(-35deg);display:block}
-@keyframes slide{to{transform:skewY(2deg) translateX(-50%)}}
+@keyframes slide{to{transform:translateX(-50%)}}
 
 /* services */
 .services{padding:clamp(5rem,9vw,8rem) 0 clamp(4rem,7vw,6rem)}
